@@ -1,0 +1,18 @@
+{
+  "extends": "@nokkel/typescript/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "declaration": false,
+    "outDir": "dist",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "removeComments": false,
+    "verbatimModuleSyntax": false
+  },
+  "exclude": ["jest.config.ts", "tests"],
+  "ts-node": {
+    "require": ["tsconfig-paths/register"]
+  },
+  "include": ["src/**/*.ts"]
+}
